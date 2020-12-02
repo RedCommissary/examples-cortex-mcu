@@ -1,0 +1,7 @@
+r
+h
+loadbin build\example-injected-adc-hrtim.bin, 0x00
+g
+verifybin build\example-injected-adc-hrtim.bin, 0x00
+r
+q
