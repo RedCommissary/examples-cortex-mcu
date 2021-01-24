@@ -42,12 +42,6 @@ constexpr float dividerOutputVoltage = 4.9f;
 /********************************************************************************
  * Used function
  ********************************************************************************/
-
-void InitLed() {
-    Gpio::Init<15>(GPIOA, Gpio::Mode::output);
-    Gpio::Set<15>(GPIOA);
-}
-
 void InitAdc() {
     RCC->AHBENR |= RCC_AHBENR_ADC12EN;
     
@@ -119,7 +113,9 @@ int main (void) {
     Clock::Init();
     InitAdc();
     InitHrpwm();
-    InitLed();
+    
+    Gpio::Init<15>(GPIOA, Gpio::Mode::output);
+    Gpio::Set<15>(GPIOA);
 
     while(1) {
         HRTIM1->sTimerxRegs[0].CMP1xR = dutyHrpwm;

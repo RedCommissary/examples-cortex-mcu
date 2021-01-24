@@ -28,5 +28,3 @@ class Hrpwm {
         static void Init();
         static void SetDuty(uint16_t duty);
 };
-
-    

@@ -38,12 +38,6 @@ constexpr float dividerInputVoltage = 20.6078f;
 /********************************************************************************
  * Used function
  ********************************************************************************/
-
-void InitLed() {
-    Gpio::Init<15>(GPIOA, Gpio::Mode::output);
-    Gpio::Set<15>(GPIOA);
-}
-
 void InitAdc() {
     RCC->AHBENR |= RCC_AHBENR_ADC12EN;
     
@@ -86,7 +80,9 @@ int main (void) {
 
     Clock::Init();
     InitAdc();
-    InitLed();
+    
+    Gpio::Init<15>(GPIOA, Gpio::Mode::output);
+    Gpio::Set<15>(GPIOA);
 
     while(1) {}
 }

@@ -37,8 +37,7 @@ library/cmsis/src/system_stm32f3xx.c
 
 CXX_SOURCES = \
 system/startup/startupF334.cpp \
-application/src/Clock.cpp \
-application/src/main.cpp \
+application/src/main.cpp
 
 #######################################
 # Macros for GCC
