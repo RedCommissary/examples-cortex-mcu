@@ -20,9 +20,14 @@
 int main (void) {
 
 /***********************************************
+ * Setting system clock for 72 MHz
+ ***********************************************/
+    Clock::Init();
+
+/***********************************************
  * Setting GPIO for LED indicator on board
  * 
- * PA12 - LED_INFO
+ * PA12 - Set high level (log.1)
  ***********************************************/
     Gpio::Init<12>(GPIOA, Gpio::Mode::output);
     Gpio::Set<12>(GPIOA);
