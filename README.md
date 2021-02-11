@@ -18,5 +18,8 @@
     * ___hrtim-phase-shift___ - multiphase PWM for 3-phase buck converter
     * ___adc-injected-sync-hrtim___ - start ADC trigger from event by HRTIM compare
 >
+* *STM32F401CC:*
+    * ___new-tamplate___ - clean project
+>
 
 ### 2. XMC4100/4200 series by Infineon
