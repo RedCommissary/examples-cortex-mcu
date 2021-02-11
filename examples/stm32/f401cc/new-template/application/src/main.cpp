@@ -1,5 +1,5 @@
 /********************************************************************************
- * project     HMI panel of the MCU STM32F401CCU6 and TFT ILI9488 (SPI)         *
+ * project     Basic example project for STM32F401CCU6 with CMSIS               *
  *                                                                              *
  * file        main.cpp                                                         *
  * author      @RedCommissary                                                   *
