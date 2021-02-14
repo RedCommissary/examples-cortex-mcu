@@ -20,6 +20,7 @@
 >
 * *STM32F401CC:*
     * ___new-tamplate___ - clean project
+    * ___dsp-filter___ - DSP median filter
 >
 
 ### 2. XMC4100/4200 series by Infineon
